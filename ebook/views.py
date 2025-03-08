@@ -8,4 +8,4 @@ class EbookViewSet(viewsets.ModelViewSet):
     queryset = Ebook.objects.all()
     serializer_class = EbookSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title']
+    search_fields = ['title', 'description']

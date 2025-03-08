@@ -8,7 +8,7 @@ class BlogViewset(viewsets.ModelViewSet):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title']
+    search_fields = ['title', 'description']
 
 class AttachmentsViewset(viewsets.ModelViewSet):
     queryset = Attachments.objects.all()

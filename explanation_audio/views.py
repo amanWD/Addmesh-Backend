@@ -8,7 +8,7 @@ class ExplanationAudioViewset(viewsets.ModelViewSet):
     queryset = ExplanationAudio.objects.all()
     serializer_class = ExplanationAudioSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['title']
+    search_fields = ['title', 'description']
 
 
 class ChapterViewset(viewsets.ModelViewSet):
